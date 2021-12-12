@@ -7,14 +7,13 @@ import Clients from "../../components/Clients";
 import Pricing from "../../components/Pricing";
 
 const Home = (props) => {
-  const { servicesRef, aboutRef, pricingRef } = props;
   return (
     <>
       <Banner />
-      <Services servicesRef={servicesRef} />
-      <About aboutRef={aboutRef} />
+      <Services />
+      <About />
       <Clients />
-      <Pricing pricingRef={pricingRef} />
+      <Pricing />
     </>
   );
 };

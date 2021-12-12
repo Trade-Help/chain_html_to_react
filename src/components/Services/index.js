@@ -2,9 +2,8 @@ import React from "react";
 import HeadingLineDec from "../../assets/images/heading-line-dec.png";
 
 const Services = (props) => {
-  const { servicesRef } = props;
   return (
-    <div id="services" ref={servicesRef} className="services section">
+    <div id="services" className="services section">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 offset-lg-2">
@@ -12,7 +11,6 @@ const Services = (props) => {
               className="section-heading  wow fadeInDown"
               // data-wow-duration="1s"
               // data-wow-delay="0.5s"
-              data-aos="fade-up"
             >
               <h4>
                 Amazing <em>Services &amp; Features</em> for you
@@ -41,7 +39,7 @@ const Services = (props) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-3">
-            <div className="service-item first-service" data-aos="fade-right">
+            <div className="service-item first-service">
               <div className="icon"></div>
               <h4>App Maintenance</h4>
               <p>
@@ -56,7 +54,7 @@ const Services = (props) => {
             </div>
           </div>
           <div className="col-lg-3">
-            <div className="service-item second-service" data-aos="fade-up">
+            <div className="service-item second-service">
               <div className="icon"></div>
               <h4>Rocket Speed of App</h4>
               <p>
@@ -71,7 +69,7 @@ const Services = (props) => {
             </div>
           </div>
           <div className="col-lg-3">
-            <div className="service-item third-service" data-aos="fade-up">
+            <div className="service-item third-service">
               <div className="icon"></div>
               <h4>Multi Workflow Idea</h4>
               <p>
@@ -93,7 +91,7 @@ const Services = (props) => {
             </div>
           </div>
           <div className="col-lg-3">
-            <div className="service-item fourth-service" data-aos="fade-left">
+            <div className="service-item fourth-service">
               <div className="icon"></div>
               <h4>24/7 Help &amp; Support</h4>
               <p>

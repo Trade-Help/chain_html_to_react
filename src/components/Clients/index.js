@@ -10,7 +10,7 @@ const Clients = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 offset-lg-2">
-            <div className="section-heading" data-aos="fade-up">
+            <div className="section-heading">
               <h4>
                 Check What <em>The Clients Say</em> About Our App Dev
               </h4>
@@ -22,7 +22,7 @@ const Clients = () => {
             </div>
           </div>
           <div className="col-lg-12">
-            <div className="naccs" data-aos="fade-up">
+            <div className="naccs">
               <div className="grid">
                 <div className="row">
                   <div className="col-lg-7 align-self-center">

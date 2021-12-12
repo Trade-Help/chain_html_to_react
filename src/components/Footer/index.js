@@ -3,9 +3,8 @@ import React from "react";
 import WhiteLogo from "../../assets/images/white-logo.png";
 
 const Footer = (props) => {
-  const { newsLetterRef } = props;
   return (
-    <footer id="newsletter" ref={newsLetterRef}>
+    <footer id="newsletter">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 offset-lg-2">

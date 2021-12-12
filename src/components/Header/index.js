@@ -3,39 +3,9 @@ import React, { useRef, useState } from "react";
 import Logo from "../../assets/images/logo.png";
 
 const Header = (props) => {
-  const {
-    handleShow,
-    scrollPosition,
-    servicesRef,
-    aboutRef,
-    pricingRef,
-    newsLetterRef,
-  } = props;
-
-  const headerRef = useRef();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const handleHeaderItemClicked = (ref) => {
-    setIsMenuOpen(false);
-    if (ref && ref.current) {
-      ref.current.scrollIntoView();
-    } else {
-      window.scrollTo(0, 0);
-    }
-  };
-
   return (
     <header
-      ref={headerRef}
-      className={`header-area header-sticky wow slideInDown ${
-        headerRef &&
-        headerRef.current &&
-        headerRef.current.clientHeight &&
-        scrollPosition &&
-        headerRef.current.clientHeight < scrollPosition
-          ? "background-header"
-          : ""
-      }`}
+      className={`header-area header-sticky wow slideInDown `}
       // background-header
       data-wow-duration="0.75s"
       data-wow-delay="0s"
@@ -50,45 +20,31 @@ const Header = (props) => {
               </a>
               {/* <!-- ***** Logo End ***** -->
           <!-- ***** Menu Start ***** --> */}
-              <ul className={`nav ${isMenuOpen ? "active" : ""}`}>
+              <ul className={`nav`}>
                 <li className="scroll-to-section">
-                  <a
-                    onClick={() => handleHeaderItemClicked()}
-                    className="active"
-                  >
-                    Home
-                  </a>
+                  <a className="active">Home</a>
                 </li>
                 <li className="scroll-to-section">
-                  <a onClick={() => handleHeaderItemClicked(servicesRef)}>
-                    Services
-                  </a>
+                  <a>Services</a>
                 </li>
                 <li className="scroll-to-section">
-                  <a onClick={() => handleHeaderItemClicked(aboutRef)}>About</a>
+                  <a>About</a>
                 </li>
                 <li className="scroll-to-section">
-                  <a onClick={() => handleHeaderItemClicked(pricingRef)}>
-                    Pricing
-                  </a>
+                  <a>Pricing</a>
                 </li>
                 <li className="scroll-to-section">
-                  <a onClick={() => handleHeaderItemClicked(newsLetterRef)}>
-                    Newsletter
-                  </a>
+                  <a>Newsletter</a>
                 </li>
                 <li>
                   <div className="gradient-button">
-                    <a id="modal_trigger" onClick={() => handleShow()}>
+                    <a id="modal_trigger">
                       <i className="fa fa-sign-in-alt"></i> Sign In Now
                     </a>
                   </div>
                 </li>
               </ul>
-              <a
-                className={`menu-trigger ${isMenuOpen ? "active" : ""}`}
-                onClick={() => setIsMenuOpen((prev) => !prev)}
-              >
+              <a className={`menu-trigger`}>
                 <span>Menu</span>
               </a>
               {/* <!-- ***** Menu End ***** --> */}

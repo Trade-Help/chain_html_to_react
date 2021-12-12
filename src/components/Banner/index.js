@@ -19,7 +19,6 @@ const Banner = () => {
                   className="left-content show-up header-text wow fadeInLeft"
                   data-wow-duration="1s"
                   data-wow-delay="1s"
-                  data-aos="fade-right"
                 >
                   <div className="row">
                     <div className="col-lg-12">
@@ -51,7 +50,6 @@ const Banner = () => {
                   className="right-image wow fadeInRight"
                   // data-wow-duration="1s"
                   // data-wow-delay="0.5s"
-                  data-aos="fade-left"
                 >
                   <img src={SliderDec} alt="" />
                 </div>

@@ -4,13 +4,12 @@ import HeadingLineDec from "../../assets/images/heading-line-dec.png";
 import PricingTable from "../../assets/images/pricing-table-01.png";
 
 const Pricing = (props) => {
-  const { pricingRef } = props;
   return (
-    <div id="pricing" ref={pricingRef} className="pricing-tables">
+    <div id="pricing" className="pricing-tables">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 offset-lg-2">
-            <div className="section-heading" data-aos="fade-up">
+            <div className="section-heading">
               <h4>
                 We Have The Best Pre-Order <em>Prices</em> You Can Get
               </h4>
@@ -22,7 +21,7 @@ const Pricing = (props) => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="pricing-item-regular" data-aos="flip-right">
+            <div className="pricing-item-regular">
               <span className="price">$12</span>
               <h4>Standard Plan App</h4>
               <div className="icon">
@@ -42,7 +41,7 @@ const Pricing = (props) => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="pricing-item-pro" data-aos="flip-up">
+            <div className="pricing-item-pro">
               <span className="price">$25</span>
               <h4>Business Plan App</h4>
               <div className="icon">
@@ -62,7 +61,7 @@ const Pricing = (props) => {
             </div>
           </div>
           <div className="col-lg-4">
-            <div className="pricing-item-regular" data-aos="flip-left">
+            <div className="pricing-item-regular">
               <span className="price">$66</span>
               <h4>Premium Plan App</h4>
               <div className="icon">
